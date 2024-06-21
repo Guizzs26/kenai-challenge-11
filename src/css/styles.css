@@ -35,6 +35,109 @@ body {
   line-height: 1;
 
   color: var(--dark-10);
+
+  background-image: url(/images/image.png);
+  background-size: cover;
+
+  background-color: black;
 }
 
-/*  */
+/***********/
+/* HEADER */
+/*********/
+
+/* header layout */
+
+.header {
+  height: 11.2rem;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 0 6.4rem;
+}
+
+/* logo styles */
+
+.site-logo {
+  font-size: 4rem;
+  line-height: 54.47px;
+
+  background: linear-gradient(#ff267a, #ffa634);
+
+  /* 
+    Use the background only to fill the text
+    (standardized version, for compatibility with other browsers)
+  */
+  background-clip: text;
+
+  /* 
+    Use the background only to fill the text
+    (required for WebKit-based browsers like Chrome and Safari)
+  */
+  -webkit-background-clip: text;
+
+  /* 
+    Sets the text fill color to transparent
+    (required to make the gradient appear in text in WebKit-based browsers) 
+  */
+  -webkit-text-fill-color: transparent;
+}
+
+/* nav layout */
+
+.main-nav {
+  width: 55.2rem;
+  height: 4rem;
+
+  display: flex;
+  align-items: center;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6.4rem;
+
+  list-style: none;
+}
+
+.nav-links-box {
+  width: 25.6rem;
+  height: 3.3rem;
+
+  display: flex;
+  gap: 6.4rem;
+}
+
+.btn-action-box {
+  width: 12.8rem;
+  height: 4rem;
+
+  display: flex;
+  gap: 4.8rem;
+}
+
+/* nav styles */
+
+.nav-link:link,
+.nav-link:visited {
+  font-size: 2.4rem;
+  font-weight: 600;
+  text-decoration: none;
+  line-height: 32.68px;
+
+  color: var(--dark-10);
+  color: white;
+}
+
+.btn-search,
+.notification,
+.user {
+  width: 4rem;
+  height: 4rem;
+
+  padding: 0.4rem;
+}
